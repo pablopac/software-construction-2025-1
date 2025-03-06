@@ -1,4 +1,4 @@
-from controllers.payment_controller import PaymentController
+from payment_system.src.controllers.payment_controller import PaymentController
 
 if __name__ == "__main__":
     controller = PaymentController()
