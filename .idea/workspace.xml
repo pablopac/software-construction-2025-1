@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c67e8de-7903-4a9d-b2ec-ab33b802ce31" name="Changes" comment="" />
+    <list default="true" id="5c67e8de-7903-4a9d-b2ec-ab33b802ce31" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/order_management/application_logic/checkout_processor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/order_management/application_logic/client_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/order_management/application_logic/order_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/order_management/application_logic/payment_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/order_management/data_persistence/order_operations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/order_management/entities/address.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/order_management/entities/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/order_management/entities/order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/order_management/entities/payment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/order_management/entities/product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/order_management/entities/status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/order_management/helpers/config_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/order_management/pure_fabrication/supabase_connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grasp/pure-fabrication/case-one/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,13 +46,16 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/yuly-interface-segregation-case-one",
+    "git-widget-placeholder": "feature/add-case-one-yuly",
     "last_opened_file_path": "/Users/koombea/Documents/projects/software-construction-2025-1",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/grasp/pure-fabrication/case-one" />
+      <recent name="$PROJECT_DIR$/solid/interface-segregation/case-one" />
       <recent name="$PROJECT_DIR$/solid/interface-segregation-case-one" />
     </key>
   </component>
