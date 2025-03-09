@@ -9,3 +9,8 @@ class OrderDetailsOperations:
         supabase: Client = SupabaseConnection().get_connection()
         response = supabase.table("order-details").insert(order_details).execute()
         return response.data
+
+    @staticmethod
+    def rollback_order_detail_operation():
+        print("implement rollback in supabase")
+
