@@ -2,10 +2,10 @@ from order_management.pure_fabrication.supabase_connection import SupabaseConnec
 from supabase import  Client
 
 
-class OrderOperations:
+class StatusOperations:
 
     @staticmethod
-    def save_order_in_bd(order):
+    def update_order_status_in_bd(order_status):
         supabase: Client = SupabaseConnection().get_connection()
-        response = supabase.table("orders").insert(order).execute()
+        response = supabase.table("order_statuses").upsert(order_status).execute()
         return response.data

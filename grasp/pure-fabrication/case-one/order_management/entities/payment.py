@@ -6,10 +6,11 @@ class Payment:
         self.discounts = discounts
         self.charges = charges
         self.gross_total = gross_total
+        self.net_value = 0
 
 
     def calculate_net_value_total(self):
         discounts = self.gross_total*(self.discounts/100)
         charges = self.gross_total*(self.charges/100)
-        self.net_value = self.gross_total + charges - discounts
+        return  self.gross_total + charges - discounts
 
