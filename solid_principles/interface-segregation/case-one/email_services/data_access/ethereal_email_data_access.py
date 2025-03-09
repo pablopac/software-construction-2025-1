@@ -2,11 +2,12 @@ import configparser
 import email
 import imaplib
 
+from email_services.interfaces.data_access_helper import DataAccessHelper
 
-class EtherealEmailDataAccess:
 
-    @staticmethod
-    def get_email_content() -> dict:
+class EtherealEmailDataAccess(DataAccessHelper):
+
+    def get_email_content(self) -> dict:
         config = configparser.ConfigParser()
         config.read("email_credentials.ini")
         user = config["ETHEREAL"]["username"]

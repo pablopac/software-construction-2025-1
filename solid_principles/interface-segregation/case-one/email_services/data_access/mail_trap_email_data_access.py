@@ -2,11 +2,12 @@ import configparser
 
 import requests
 
+from email_services.interfaces.data_access_helper import DataAccessHelper
 
-class MailTrapEmailDataAccess:
 
-    @staticmethod
-    def get_email_content() -> dict:
+class MailTrapEmailDataAccess(DataAccessHelper):
+
+    def get_email_content(self) -> dict:
         config = configparser.ConfigParser()
         config.read("email_credentials.ini")
         api_token = config["MAIL_TRAP"]["api_token"]
