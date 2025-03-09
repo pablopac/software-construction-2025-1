@@ -1,25 +1,12 @@
-import datetime
-import random
-
-from order_management.entities.order import Order
-
+from order_management.data_persistence.order_operations import OrderOperations
 
 class OrderManager:
 
-    def __init__(self, order_status, client, payment, products):
-        self.order_id = self.create_order_id()
-        self.order_date = datetime.date.today()
-        self.order_status = order_status
-        self.client = client
-        self.payment = payment
-        self.products = products
+    def __init__(self, order):
+        self.order = order
 
-    @staticmethod
-    def create_order_id():
-        return random.randrange(11111111, 99999999)
+    def store_order_in_bd(self):
+        return OrderOperations.save_order_in_bd(self.order)
 
-    @staticmethod
-    def create_order(order_status, client, payment, products):
-        return Order(order_status, client, payment, products)
 
 
