@@ -1,3 +1,10 @@
+#Single Responsibility Principle(SRP) aplicado a un sistema de facturación electrónica  
+#Se manejaria el tener múltiples responsabilidades
+
+#InvoiceGenerator: Responsable de crear la estructura de la factura.
+#TaxCalculator: Encargada de calcular los impuestos de la factura.
+#InvoiceSender: Maneja el envío de la factura a través de un servicio web.
+
 from calculators.tax_calculator import TaxCalculator
 from generators.invoice_generator import InvoiceGenerator
 from senders.invoice_sender import InvoiceSender
